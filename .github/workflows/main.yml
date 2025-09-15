@@ -16,10 +16,10 @@ jobs:
         uses: actions/setup-node@v5.0.0
         with:
           node-version: 22.x
-          cache: 'npm'
+          cache: npm
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Next JS App
         run: npm run build
